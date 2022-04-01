@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+        :root {
+  --base-shade-1: #00a8fa;
+  --white-shade-1: #ffffff;
+  --white-shade-2: #d7e1f3;
+  --black-shade-1: #232323;
+  --black-shade-2: #676a8b;
+  --grad-color-1: 0, 180, 250;
+  --grad-color-2: 21, 120, 255;
+
+  --base-font-size: 1.3rem;
+
+  --heading-font-size-1: 4rem;
+  --heading-font-size-2: 3.2rem;
+  --heading-font-size-3: 2rem;
+  --heading-font-size-4: 1.8rem;
+
+  --border-radius-1: 1rem;
+  --border-radius-2: 0.5rem;
+}
+        .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.column {
+  width: 100%;
+}
+h2 {
+  font-size: var(--heading-font-size-2);
+  color: var(--black-shade-1);
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  font-size: var(--heading-font-size-3);
+  color: var(--black-shade-1);
+  font-weight: 700;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.section-desc {
+  text-align: center;
+  margin: 2rem 0 6rem 0;
+
+}
+p,
+button {
+  font-size: var(--base-font-size);
+  color: var(--black-shade-2);
+  line-height: 1.8;
+  font-weight: 400;
+}
+.btn {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius-2);
+  border: none;
+  margin: 2rem 0;
+}
+.primary-btn {
+  background-color: var(--base-shade-1);
+  color: var(--white-shade-1);
+}
+.secondary-btn {
+  border: 0.3rem solid var(--base-shade-1);
+  color: var(--base-shade-1);
+}
+        .baby-names .column:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+.baby-names .column:nth-child(2) {
+  padding: 0 2rem;
+}
+.baby-names img {
+  display: block;
+  width: 45%;
+}
+.names {
+  border-bottom: 1.5px dashed rgba(var(--grad-color-1), 0.4);
+}
+.names:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.names div {
+  display: flex;
+  gap: 2rem;
+}
+.names p {
+  margin-bottom: 1.5rem;
+}
+.baby-names .fas {
+  display: inline-block;
+  background-color: var(--white-shade-2);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--base-shade-1);
+}
+.baby-names h3 {
+  display: inline-block;
+}
+.download-btns {
+  display: flex;
+}
+.download-btns a {
+  display: inline;
+  text-align: center;
+}
+.download-btns a img {
+  display: inline-block;
+  width: 70%;
+}
+.culture .row {
+  align-items: stretch;
+}
+.culture .column {
+  box-shadow: 0 0.5rem 2.4rem 0.6rem rgba(0, 0, 0, 0.06);
+  border-radius: var(--border-radius-1);
+  display: flex;
+  flex-direction: column;
+}
+.culture .column > *:not(img) {
+  padding: 0 2rem;
+}
+.culture .column img {
+  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+  width: 100%;
+  height: 300px;
+}
+.culture .column p {
+  text-align: center;
+  flex-grow: 1;
+}
+.read-more-btn {
+  display: flex;
+  justify-content: center;
+}
+.read-more-btn .btn:hover {
+  color: var(--white-shade-1);
+  background-color: var(--base-shade-1);
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  
+}
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  
+  section{
+    padding: 7.5rem 3rem;
+  }
+  
+}
+    </style>
+</head>
+<body>
+    <section class="culture" id="culture">
+        <h2>AKAN CULTURE</h2>
+        <p class="section-desc">
+         Read to find more about this amazing culture 
+        </p>
+        <div class="row">
+          <div class="column">
+            <img src="assets/images/dressing.jpg" />
+            <h3>Akan Dressing</h3>
+            <p>
+                Akan people wore outfits of many different styles and materials. 
+               
+                
+            </p>
+            <div class="read-more-btn">
+              <a href="https://www.tota.world/article/69/"><button class="btn secondary-btn">Learn More</button></a>
+            </div>
+          </div>
+          <div class="column">
+            <img src="assets/images/art.webp" />
+            <h3>Akan Art</h3>
+            <p>
+                Akan art is an art form that originated among the Akan people of West Africa.
+            
+            </p>
+            <div class="read-more-btn">
+              <a href="https://en.wikipedia.org/wiki/Akan_art"><button class="btn secondary-btn">Learn More</button></a></div>
+            </div>
+          
+          <div class="column">
+            <img src="assets/images/religion.webp" />
+            <h3>Akan Religion</h3>
+            <p>
+               Akan religion remains practiced by some and is often syncretized with Christianity.
+            </p>
+            <div class="read-more-btn">
+              <a href="https://en.wikipedia.org/wiki/Akan_religion"><button class="btn secondary-btn">Learn More</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="baby-names" id="baby-names">
+        <h2>Akan Names</h2>
+        <p class="section-desc">
+            The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. 
+        </p>
+        <div class="row">
+          <div class="column">
+            <img style="width:100%; height:100%;" src="assets/images/baby.jpg" />
+          </div>
+          <div class="column">
+            <div class="names">
+              <div>
+                <i class="fas fa-star"></i>
+                <h3>Male names</h3>
+              </div>
+              <p>
+                
+                Kwasi/Kwesi (Sunday)</br>
+                Kwadwo (Monday)</br>
+                Kwabena(Tuesday) </br>
+                Kwaku(Wednesday)</br>
+                Kwao/Yao(Thursday)</br>
+                Kwafi/Kofi(Friday)</br>
+                Kwame/Kwamena(Saturday)</br>
+              </p>
+            </div>
+            <div class="names">
+              <div>
+                <i class="fas fa-star"></i>
+                <h3>Female Names</h3>
+              </div>
+              <p>
+                Akosua/Esi(Sunday)</br>
+                Adwoa(Monday)</br>
+                Abena(Tuesday) </br>
+                Akua(Wednesday)</br>
+                Yaa(Thursday)</br>
+                Afia/Afua(Friday)</br>
+                Amma(Saturday)</br>
+                
+              </p>
+            </div>
+           
+            
+          </div>
+        </div>
+      </section>
+</body>
+</html>
