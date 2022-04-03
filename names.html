@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
     <style>
         
@@ -16,11 +19,6 @@
   box-sizing:border-box;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  background:#e2e2e2;
-  
-}
 
 svg{
   position:fixed;
@@ -29,17 +27,12 @@ svg{
 }
 
 .container{
-  position:relative;
-  top:200px;
-  left:35%;
-  display:block;
   margin-bottom:80px;
   width:500px;
   height:360px;
   background:#fff;
   border-radius:5px;
   overflow:hidden;
-  z-index:1;
   height:400px;
 }
 
@@ -239,7 +232,7 @@ input[type=radio]{
 
     </style>
 </head>
-<body>
+<body class="font-[Open Sans] bg-[#e2e2e2]">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="174.7899" y1="186.34" x2="330.1259" y2="186.34" gradientTransform="matrix(0.8538 0.5206 -0.5206 0.8538 147.9521 -79.1468)">
@@ -272,7 +265,7 @@ input[type=radio]{
 </svg>
 
 
-<div class="container">
+<div class="relative top-[200px] left-[35%] block z-1 backdrop-blur-sm rounded-[15px]">
   <h2>KNOW YOUR AKAN NAME</h2>
   <form>
      <label style="margin-left:30px;color:#ff5722; text-align: center;">Date of Birth:</label>
@@ -280,7 +273,7 @@ input[type=radio]{
     <br/>
    
     
-<label style="margin-left:30px;color:#ff5722; text-align: center;">Gender:</label>  
+<label class="ml-[30px] text-[#ff5722] text-center">Gender:</label>  
       
             <label class="radio">
                 <input name="radio" type="radio" checked>
@@ -296,17 +289,15 @@ input[type=radio]{
   
   <br/>
   
-  <button class="signin">
+  <button id="submit" class="signin bg-blue-700 rounded-3xl">
     <span>SUBMIT</span>
   </button>
 </br>
-  <h3>your registration is complete !    </h3>
+  <h3>your registration is complete ! </h3>
   <h3>your sign in is complete !</h3>
   <div class="reg"></div>
   <div class="sig"></div>
-
- 
- 
 </div>
+<script type="module" src="./javascript/main.js"></script>
 </body>
 </html>
